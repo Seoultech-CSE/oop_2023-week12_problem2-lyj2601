@@ -9,9 +9,17 @@ public class Problem2 {
         int b = input.nextInt();
         int c = input.nextInt();
 
-        /*
-          Rational class를 참고하여 코드 작성
-        */
+        Rational r1 = new Rational(a, 1);
+        Rational r2 = new Rational(b, 1);
+        Rational r3 = new Rational(c, 1);
+
+    
+        Rational h = r2.multiply(new Rational(-1, 1)).divide(r1.multiply(new Rational(2,1)));
+        Rational k = r1.multiply(new Rational(4, 1)).multiply(r3).subtract(r2.multiply(r2)).divide(r1.multiply(new Rational(4, 1)));
+
+      
+        System.out.print("h is " + h+" k is "+k);
+
       
     }
   
